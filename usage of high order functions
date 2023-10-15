@@ -1,0 +1,18 @@
+# Function to calculate the square of a number
+def square(x):
+    return x * x
+
+# Function to check if a number is even
+def is_even(x):
+    return x % 2 == 0
+
+# Sample list of numbers
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Using map() to calculate the square of each number in the list
+squared_numbers = list(map(square, numbers))
+print("Squared numbers:", squared_numbers)
+
+# Using filter() to get a list of even numbers from the original list
+even_numbers = list(filter(is_even, numbers))
+print("Even numbers:", even_numbers)
