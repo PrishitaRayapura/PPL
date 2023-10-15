@@ -1,0 +1,36 @@
+def is_valid_date(day, month, year):
+    # Check for valid year (between 1 and 9999)
+    if year < 1 or year > 9999:
+        return False
+
+    # Check for valid month (between 1 and 12)
+    if month < 1 or month > 12:
+        return False
+
+    # Check for valid day
+    if month in {1, 3, 5, 7, 8, 10, 12}:
+        if day < 1 or day > 31:
+            return False
+    elif month in {4, 6, 9, 11}:
+        if day < 1 or day > 30:
+            return False
+    else:  # February (month 2)
+        if is_leap_year(year):
+            if day < 1 or day > 29
+        else:
+            if day < 1 or day > 28
+
+    return True
+
+def is_leap_year(year):
+    return (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
+
+# Input from the user
+day = int(input("Enter the day: "))
+month = int(input("Enter the month: "))
+year = int(input("Enter the year: "))
+
+if is_valid_date(day, month, year):
+    print("Valid date.")
+else:
+    print("Invalid date.")
