@@ -1,0 +1,15 @@
+phonebook = {}  # Create an empty phonebook as a dictionary
+
+# Input: N names and phone numbers
+N = int(input("Enter the number of entries in the phonebook: ")
+for i in range(N):
+    name = input("Enter name: ")
+    number = input("Enter phone number: ")
+    phonebook[number] = name
+
+# Search for a number and print the corresponding name
+search_number = input("Enter the phone number to search: ")
+if search_number in phonebook:
+    print(f"Name: {phonebook[search_number]}")
+else:
+    print("Number not found in the phonebook.")
