@@ -1,3 +1,4 @@
+//Write a program to convert decimal to Fahrenheit using functions.
 #include <iostream>
 using namespace std;
 
@@ -14,7 +15,7 @@ int main() {
 
     double fahrenheit = celsiusToFahrenheit(celsius);
 
-    cout << "Temperature in Fahrenheit: " << fahrenheit << "°F" << endl;
+    cout << "Temperature in Fahrenheit: " << fahrenheit << "Â°F" << endl;
 
     return 0;
 }
