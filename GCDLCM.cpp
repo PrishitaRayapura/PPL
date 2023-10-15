@@ -1,3 +1,4 @@
+//Write a function to calculate GCD and LCM of the numbers entered.
 #include <iostream>
 using namespace std;
 
