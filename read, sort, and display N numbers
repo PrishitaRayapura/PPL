@@ -1,0 +1,22 @@
+class NumberSorter:
+    def __init__(self):
+        self.numbers = []
+
+    def read_data(self, n):
+        for i in range(n):
+            number = float(input(f"Enter number {i + 1}: "))
+            self.numbers.append(number)
+
+    def sort_data(self):
+        self.numbers.sort()
+
+    def display_data(self):
+        print("Sorted Numbers:")
+        for number in self.numbers:
+            print(number)
+
+n = int(input("Enter the number of numbers to sort: "))
+sorter = NumberSorter()
+sorter.read_data(n)
+sorter.sort_data()
+sorter.display_data()
