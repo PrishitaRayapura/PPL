@@ -1,0 +1,6 @@
+def reverse_integer(n):
+    return int(str(n)[::-1])
+
+number = int(input("Enter an integer: "))
+reversed_number = reverse_integer(number)
+print("Reversed integer:", reversed_number)
